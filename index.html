@@ -1,95 +1,240 @@
-    <!-- CONTATO -->
-    <section class="secao" id="contato">
-      <div class="container">
-        <div class="cabecalho-secao">
-          <span class="etiqueta">FALE CONOSCO</span>
-          <h2>Informações e <span>Atendimento.</span></h2>
-          <p>Entre em contato com a secretaria, acompanhe nossas novidades ou faça uma visita à escola.</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b3d91">
+  <meta name="description" content="Site oficial da E.E. Presidente Arthur Bernardes da Silva - Cerquilho, SP. Educação, conhecimento, respeito e futuro.">
+  <title>E.E. Presidente Arthur Bernardes da Silva</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="topo" id="topo">
+    <div class="container navegacao">
+      <a href="#inicio" class="logo" aria-label="Página inicial">
+        <span class="simbolo">E</span>
+        <span class="logo-texto">
+          <strong>E.E. Pres. Arthur Bernardes</strong>
+          <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
+        </span>
+      </a>
+
+      <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre & História</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#projeto">Projeto</a>
+        <a href="#contato" class="btn-nav">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <span class="etiqueta-clara">✦ TRADIÇÃO E ENSINO DESDE 1958</span>
+          <h1>Conhecimento que inspira.<br><span>Futuro que transforma.</span></h1>
+          <p>
+            Construindo o futuro dos estudantes de Cerquilho através do conhecimento, 
+            da inovação, da tecnologia e do respeito.
+          </p>
+          <div class="hero-botoes">
+            <a href="#cursos" class="btn-primario">Conhecer Cursos →</a>
+            <a href="#galeria" class="btn-secundario">Tour pela Escola</a>
+          </div>
         </div>
 
-        <div class="contato-wrapper">
-          <!-- COLUNA DE INFORMAÇÕES -->
-          <div class="contato-lista">
-            <div class="contato-card">
-              <div class="contato-badge azul">📍</div>
-              <div class="contato-info">
-                <strong>Endereço</strong>
-                <p>Av. Presidente Washington Luiz, 478 – Centro<br>Cerquilho – SP, CEP 18520-039</p>
-              </div>
+        <div class="hero-imagem">
+          <div class="moldura-hero">
+            <img src="imagens/fachada.jpeg" alt="Fachada da E.E. Presidente Arthur Bernardes da Silva">
+            <div class="badge-flutuante">
+              <strong>+65 anos</strong>
+              <span>Transformando vidas em Cerquilho</span>
             </div>
-
-            <div class="contato-card">
-              <div class="contato-badge verde">📞</div>
-              <div class="contato-info">
-                <strong>Telefone da Secretaria</strong>
-                <p><a href="tel:1532841030">(15) 3284-1030</a></p>
-                <span class="contato-sub">Clique para ligar</span>
-              </div>
-            </div>
-
-            <div class="contato-card">
-              <div class="contato-badge laranja">✉️</div>
-              <div class="contato-info">
-                <strong>E-mail Institucional</strong>
-                <p><a href="mailto:e016664a@educacao.sp.gov.br">e016664a@educacao.sp.gov.br</a></p>
-                <span class="contato-sub">Atendimento administrativo e pedagógico</span>
-              </div>
-            </div>
-
-            <div class="contato-card">
-              <div class="contato-badge roxo">🕒</div>
-              <div class="contato-info">
-                <strong>Horário da Secretaria</strong>
-                <p>Segunda a Sexta, das 08h00 às 17h00</p>
-              </div>
-            </div>
-
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contato-card insta-card">
-              <div class="contato-badge insta">📸</div>
-              <div class="contato-info">
-                <strong>Instagram Oficial</strong>
-                <p>@escolabernardes_oficial</p>
-                <span class="contato-sub">Siga para acompanhar eventos e avisos ↗</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- COLUNA DO MAPA INTERATIVO (OPENSTREETMAP) -->
-          <div class="mapa-box">
-            <iframe
-              title="Mapa de Cerquilho - E.E. Presidente Arthur Bernardes"
-              src="https://openstreetmap.org"
-              loading="lazy">
-            </iframe>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- RODAPÉ -->
-  <footer class="rodape">
-    <div class="container rodape-conteudo">
-      <div class="rodape-marca">
-        <span class="simbolo">E</span>
-        <div>
-          <strong>E.E. Presidente Arthur Bernardes da Silva</strong>
-          <p>Av. Presidente Washington Luiz, 478 – Centro, Cerquilho – SP • Tel: (15) 3284-1030</p>
+    <!-- ATALHOS RÁPIDOS -->
+    <section class="atalhos">
+      <div class="container atalhos-grid">
+        <a href="#sobre" class="atalho-card">
+          <div class="atalho-icone azul">🏛️</div>
+          <div>
+            <strong>Nossa História</strong>
+            <small>Conheça nossa trajetória desde 1958</small>
+          </div>
+          <span class="seta">↗</span>
+        </a>
+
+        <a href="#cursos" class="atalho-card">
+          <div class="atalho-icone laranja">💻</div>
+          <div>
+            <strong>Cursos Técnicos</strong>
+            <small>Administração e Desenv. de Sistemas</small>
+          </div>
+          <span class="seta">↗</span>
+        </a>
+
+        <a href="#galeria" class="atalho-card">
+          <div class="atalho-icone verde">📸</div>
+          <div>
+            <strong>Estrutura Escolar</strong>
+            <small>Quadras, laboratórios e espaços</small>
+          </div>
+          <span class="seta">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SOBRE E PILARES -->
+    <section class="secao" id="sobre">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">SOBRE A ESCOLA</span>
+          <h2>Nossa história e <span>compromisso.</span></h2>
+          <p>A educação abre caminhos e ajuda cada estudante a descobrir seu verdadeiro potencial.</p>
+        </div>
+
+        <div class="pilares-grid">
+          <article class="card-pilar">
+            <div class="icone-pilar laranja">🎯</div>
+            <h3>Objetivo da Escola</h3>
+            <p>
+              Oferecer educação de qualidade, proporcionando aos estudantes conhecimentos, habilidades e 
+              competências para continuar os estudos, ingressar no mercado de trabalho e participar da 
+              sociedade de forma responsável, contribuindo para sua formação intelectual, social e cidadã.
+            </p>
+          </article>
+
+          <article class="card-pilar">
+            <div class="icone-pilar verde">🤝</div>
+            <h3>Compromisso da Escola</h3>
+            <p>
+              Promover o ensino e a aprendizagem, incentivando o respeito, a responsabilidade, a 
+              solidariedade e a convivência entre os estudantes. Preparar os alunos para os desafios da 
+              vida, valorizando as diferenças e formando cidadãos conscientes de seus direitos e deveres.
+            </p>
+          </article>
+        </div>
+
+        <!-- LINHA DO TEMPO DA HISTÓRIA -->
+        <div class="historia-box">
+          <h3>Linha do Tempo Institucional</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="ano">1958</span>
+              <p>Criada em 28 de novembro de 1958 como <strong>Ginásio Estadual de Cerquilho</strong>.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="ano">1959</span>
+              <p>Instalada em 7 de março com o nome de <strong>Ginásio Estadual Governador Jânio Quadros</strong>.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="ano">1963</span>
+              <p>Recebe o nome de <strong>Ginásio Estadual Presidente Arthur da Silva Bernardes</strong>.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="ano">1970</span>
+              <p>Transformada oficialmente em <strong>Escola Estadual</strong>.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="ano">1984</span>
+              <p>Passa a oferecer o tradicional curso de <strong>Magistério</strong>.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="ano">1999</span>
+              <p>Oficialização da denominação atual: <strong>E.E. Presidente Arthur da Silva Bernardes</strong>.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <small>© 2026 E.E. Presidente Arthur Bernardes da Silva. Todos os direitos reservados.</small>
-    </div>
-  </footer>
+    </section>
 
-  <!-- LIGHTBOX DA GALERIA -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-fechar" id="lightbox-fechar" aria-label="Fechar imagem">✕</button>
-    <div class="lightbox-conteudo">
-      <img id="lightbox-img" src="" alt="">
-      <p id="lightbox-legenda"></p>
-    </div>
-  </div>
+    <!-- CURSOS DISPONÍVEIS -->
+    <section class="secao bg-suave" id="cursos">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">FORMAÇÃO PROFISSIONAL</span>
+          <h2>Cursos <span>Disponíveis.</span></h2>
+          <p>Preparação prática e teórica para conectar nossos estudantes às exigências do mercado de trabalho.</p>
+        </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+        <div class="cursos-grid">
+          <article class="curso-card">
+            <div class="curso-topo">
+              <span class="curso-badge">Ensino Técnico</span>
+              <span class="curso-emoji">📊</span>
+            </div>
+            <h3>Administração</h3>
+            <p>
+              Desenvolva visão estratégica, liderança, gestão financeira, recursos humanos, empreendedorismo 
+              e organização empresarial para atuar em diversos setores do mercado.
+            </p>
+          </article>
+
+          <article class="curso-card">
+            <div class="curso-topo">
+              <span class="curso-badge">Tecnologia</span>
+              <span class="curso-emoji">💻</span>
+            </div>
+            <h3>Desenvolvimento de Sistemas</h3>
+            <p>
+              Aprenda lógica de programação, criação de sites, aplicativos, bancos de dados e soluções 
+              digitais inovadoras com foco na prática e resolução de problemas reais.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA DE IMAGENS -->
+    <section class="secao" id="galeria">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">REGISTROS DA NOSSA ESCOLA</span>
+          <h2>Nossa escola em <span>imagens.</span></h2>
+          <p>Clique em qualquer foto para ampliar e conhecer nossos ambientes de aprendizagem e convivência.</p>
+        </div>
+
+        <div class="galeria-grid">
+          <figure class="foto-card" data-src="imagens/fachada.jpeg" data-caption="01 • Fachada da escola">
+            <img src="imagens/fachada.jpeg" alt="Fachada da escola" loading="lazy">
+            <figcaption><span>01</span> Fachada da escola</figcaption>
+          </figure>
+
+          <figure class="foto-card" data-src="imagens/area-das-bikes.jpeg" data-caption="02 • Área das bicicletas">
+            <img src="imagens/area-das-bikes.jpeg" alt="Área das bicicletas" loading="lazy">
+            <figcaption><span>02</span> Área das bicicletas</figcaption>
+          </figure>
+
+          <figure class="foto-card" data-src="imagens/saida.jpeg" data-caption="03 • Saída da escola">
+            <img src="imagens/saida.jpeg" alt="Área externa e saída da escola" loading="lazy">
+            <figcaption><span>03</span> Saída da escola</figcaption>
+          </figure>
+
+          <figure class="foto-card" data-src="imagens/patio.jpeg" data-caption="04 • Pátio">
+            <img src="imagens/patio.jpeg" alt="Pátio da escola" loading="lazy">
+            <figcaption><span>04</span> Pátio</figcaption>
+          </figure>
+
+          <figure class="foto-card" data-src="imagens/quadra1.jpeg" data-caption="05 • Quadra de basquete">
+            <img src="imagens/quadra1.jpeg" alt="Quadra de basquete" loading="lazy">
+            <figcaption><span>05</span> Quadra de basquete</figcaption>
+          </figure>
+
