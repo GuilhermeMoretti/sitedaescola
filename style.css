@@ -752,3 +752,76 @@ grid-template-columns: 1fr;
 .foto-card:first-child {
 grid-column: span 1;
 grid-row: span 1;
+}
+  /* ================= CONTATO ================= */
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.contato-card {
+  background: var(--fundo);
+  border: 1px solid var(--borda);
+  border-radius: 22px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.25s;
+}
+
+.contato-card:hover {
+  border-color: var(--azul);
+  transform: translateY(-4px);
+  box-shadow: var(--sombra);
+}
+
+.contato-icone {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.contato-icone.azul { background: #dbeafe; }
+.contato-icone.verde { background: #d1fae5; }
+.contato-icone.laranja { background: #ffedd5; }
+
+.contato-card h3 {
+  font-size: 1.15rem;
+  color: var(--azul-escuro);
+}
+
+.contato-card p {
+  font-size: 0.92rem;
+  color: var(--texto-sec);
+  line-height: 1.6;
+}
+
+.contato-destaque {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--azul-escuro);
+}
+
+.contato-link {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--azul);
+  word-break: break-word;
+  transition: color 0.2s;
+}
+
+.contato-link:hover {
+  color: var(--laranja);
+}
+
+@media (max-width: 900px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+}
